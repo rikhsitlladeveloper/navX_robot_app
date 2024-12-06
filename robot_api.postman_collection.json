@@ -1,0 +1,643 @@
+{
+	"info": {
+		"_postman_id": "0bb69fd5-c87e-4c3b-9571-fd013b66163d",
+		"name": "robot_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "bringup",
+			"item": [
+				{
+					"name": "start",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://10.10.21.203:8000/api/bringup/start",
+							"protocol": "http",
+							"host": [
+								"10",
+								"10",
+								"21",
+								"203"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"bringup",
+								"start"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "stop",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://10.10.21.203:8000/api/bringup/stop",
+							"protocol": "http",
+							"host": [
+								"10",
+								"10",
+								"21",
+								"203"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"bringup",
+								"stop"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "mapping",
+			"item": [
+				{
+					"name": "savemap",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"map_name\": \"test_api_03_06\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://10.10.21.203:8000/api/mapping/savemap",
+							"protocol": "http",
+							"host": [
+								"10",
+								"10",
+								"21",
+								"203"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mapping",
+								"savemap"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "start",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"slam_method\": \"\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://10.10.21.203:8000/api/mapping/start",
+							"protocol": "http",
+							"host": [
+								"10",
+								"10",
+								"21",
+								"203"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mapping",
+								"start"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "stop",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://10.10.21.203:8000/api/mapping/stop",
+							"protocol": "http",
+							"host": [
+								"10",
+								"10",
+								"21",
+								"203"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mapping",
+								"stop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getmap",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"map_name\": \"test_api_03_06\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://10.10.21.203:8000/api/mapping/getmap",
+							"protocol": "http",
+							"host": [
+								"10",
+								"10",
+								"21",
+								"203"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mapping",
+								"getmap"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loadmap",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "map_file",
+									"type": "file",
+									"src": "/home/user/test_api_03_06.zip"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://10.10.21.203:8000/api/mapping/loadmap",
+							"protocol": "http",
+							"host": [
+								"10",
+								"10",
+								"21",
+								"203"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mapping",
+								"loadmap"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"map_name\": \"test_api_03_06\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://10.10.21.203:8000/api/mapping/delete",
+							"protocol": "http",
+							"host": [
+								"10",
+								"10",
+								"21",
+								"203"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mapping",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "navigation",
+			"item": [
+				{
+					"name": "start",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"map_name\": \"test_api_map\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://10.10.21.203:8000/api/navigation/start",
+							"protocol": "http",
+							"host": [
+								"10",
+								"10",
+								"21",
+								"203"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"navigation",
+								"start"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "stop",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"map_name\": \"test_api_map\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://10.10.21.203:8000/api/navigation/stop",
+							"protocol": "http",
+							"host": [
+								"10",
+								"10",
+								"21",
+								"203"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"navigation",
+								"stop"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"testuser\",\n    \"password\": \"test123\",\n    \"role\": \"user\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://10.10.21.203:8000/api/user/register",
+							"protocol": "http",
+							"host": [
+								"10",
+								"10",
+								"21",
+								"203"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\": \"testuser\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://10.10.21.203:8000/api/user/delete",
+							"protocol": "http",
+							"host": [
+								"10",
+								"10",
+								"21",
+								"203"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "robot",
+			"item": [
+				{
+					"name": "reboot",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "admin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://10.10.21.203:8000/api/robot/reboot",
+							"protocol": "http",
+							"host": [
+								"10",
+								"10",
+								"21",
+								"203"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"robot",
+								"reboot"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

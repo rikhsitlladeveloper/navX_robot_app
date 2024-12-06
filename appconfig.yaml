@@ -1,0 +1,6 @@
+# amr_ros_pkg_name: "leo_robot"
+# bringup_launch: "bringup.launch"
+# navigation_launch: "navigation.launch"
+amr_ros_pkg_name: "navigationx_robot"
+bringup_launch: "bringup_launch.py"
+navigation_launch: "navigation2.launch.py"
