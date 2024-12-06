@@ -1,7 +1,7 @@
 ## Installation
 ```sh
-git clone https://github.com/artelrobotics/amr_robot_app.git
-cd amr_robot_app
+git clone https://github.com/rikhsitlladeveloper/navX_robot_app
+cd navX_robot_app
 pip3 install -r requirements.txt
 ```
 
@@ -9,13 +9,13 @@ pip3 install -r requirements.txt
 ##### Run on development environment
 ---
 ```sh
-cd amr_robot_app
+cd navX_robot_app
 sh ./devrun.sh
 ```
 ##### Run on production environment
 ---
 ```sh
-cd amr_robot_app
+cd navX_robot_app
 sh ./prodrun.sh
 ```
 
