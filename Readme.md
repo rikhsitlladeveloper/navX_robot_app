@@ -28,17 +28,17 @@ sh ./prodrun.sh
 |-----------------------|--------|---------------|
 | /api/user/register    | POST   | admin         |
 | /api/user/delete      | DELETE | admin         |
-| /api/bringup/start    | GET    | admin         | 
+| /api/bringup/start    | POST    | admin         | 
 | /api/bringup/stop     | POST   | admin         |
-| /api/mapping/start    | GET    | admin         |
-| /api/mapping/stop     | GET    | admin         |
-| /api/mapping/savemap  | GET    | admin         |
-| /api/mapping/getmap   | GET    | admin         |
+| /api/mapping/start    | POST    | admin         |
+| /api/mapping/stop     | POST    | admin         |
+| /api/mapping/savemap  | POST    | admin         |
+| /api/mapping/getmap   | POST    | admin         |
 | /api/mapping/loadmap  | POST   | admin         |
 | /api/mapping/delete   | DELETE | admin         |
-| /api/navigation/start | GET    | admin         |
-| /api/navigation/stop  | GET    | admin         |
-| /api/robot/reboot     | GET    | admin         |
+| /api/navigation/start | POST    | admin         |
+| /api/navigation/stop  | POST    | admin         |
+| /api/robot/reboot     | POST    | admin         |
 
 ## Response Fields:
 ```json
